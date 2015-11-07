@@ -6,7 +6,7 @@
             <protocol>vnc</protocol>
             <param name="hostname">localhost</param>
             <param name="port">5901</param>
-            <param name="VNCPASS"</param>
+            <param name="password">VNCPASS</param>
         </connection>
     </authorize>
 
