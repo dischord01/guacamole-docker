@@ -24,9 +24,19 @@ RUN    dnf -y update \
            /var/log/tomcat
 
 ADD resources/user-mapping.xml /etc/guacamole/
+ADD resources/logback.xml /etc/guacamole/
+ADD resources/tomcat-users.xml /etc/tomcat/
 
 RUN    chmod -R a+rX \
-           /etc/guacamole
+           /etc/guacamole \
+           /etc/tomcat
+
+# debugging tools
+RUN    dnf -y install \
+           findutils \
+           lsof \
+           net-tools \
+    && dnf -y clean all
 
 USER 1000
 
