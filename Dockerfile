@@ -2,9 +2,9 @@
 #                    guacamole Web App for OpenShift                   #
 ########################################################################
 
-FROM fedora:22
+FROM fedora 
 
-MAINTAINER Rich Lucente <rlucente@redhat.com>
+MAINTAINER michaelepley@gmail.com
 
 LABEL vendor="Red Hat"
 LABEL version="0.1"
