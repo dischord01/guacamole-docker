@@ -2,7 +2,7 @@
 #                    guacamole Web App for OpenShift                   #
 ########################################################################
 
-FROM rhel7 
+FROM registry.access.redhat.com/rhel7 
 
 MAINTAINER michaelepley@gmail.com
 
