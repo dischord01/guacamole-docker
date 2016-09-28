@@ -2,7 +2,7 @@
 #                    guacamole Web App for OpenShift                   #
 ########################################################################
 
-FROM fedora 
+FROM rhel7 
 
 MAINTAINER michaelepley@gmail.com
 
