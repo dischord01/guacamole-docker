@@ -13,7 +13,8 @@ LABEL description="guacamole Web App for OpenShift"
 # Add the needed package for guacamole and set permissions so any
 # unprivileged user can run guacamole
 
-RUN    dnf -y update \
+RUN    alias dnf='yum' \
+    && dnf -y update \
     && dnf -y install \
            guacamole \
     && dnf -y clean all \
